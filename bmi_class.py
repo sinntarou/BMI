@@ -19,6 +19,8 @@ class BMI:
         self.height = height
         self.weight = weight
 
+        self.value = self.weight / (self.height ** 2)
+
     def calculate_bmi(self):
         return self.weight / (self.height ** 2)
 
