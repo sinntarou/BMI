@@ -11,18 +11,10 @@ class (成人の)BMI:
    　　できること：
    　　　　-？？
 """
-
-
 # クラス名はUpperCamelClassが普通
 class BMI:
     def __init__(self, height, weight):
-        self.height = height
-        self.weight = weight
-
-        self.value = self.weight / (self.height ** 2)
-
-    def calculate_bmi(self):
-        return self.weight / (self.height ** 2)
+        self.value = weight / (height ** 2)
 
     def __str__(self):
         return f'{self.value:.2f}'
